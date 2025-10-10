@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, Zap, Shield, TrendingDown } from "lucide-react";
 import heroImage from "@/assets/hero-solar.jpg";
+import backgroundPattern from "@/assets/background-pattern.jpg";
 
 const Home = () => {
   const benefits = [
@@ -27,7 +28,15 @@ const Home = () => {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-b from-muted to-background">
-        <div className="container px-4 py-20 md:py-32">
+        <div 
+          className="absolute inset-0 opacity-30"
+          style={{
+            backgroundImage: `url(${backgroundPattern})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        />
+        <div className="container px-4 py-20 md:py-32 relative z-10">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
