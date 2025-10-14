@@ -39,7 +39,9 @@ const Navigation = () => {
               {link.name}
             </Link>
           ))}
-          <Button className="ml-4">Get Quote</Button>
+          <Button className="ml-4" asChild>
+            <Link to="/contact">Get Quote</Link>
+          </Button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -70,7 +72,9 @@ const Navigation = () => {
                 {link.name}
               </Link>
             ))}
-            <Button className="mt-4 w-full">Get Quote</Button>
+            <Button className="mt-4 w-full" asChild>
+              <Link to="/contact">Get Quote</Link>
+            </Button>
           </div>
         </div>
       )}
