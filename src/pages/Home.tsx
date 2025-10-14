@@ -4,44 +4,37 @@ import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, Zap, Shield, TrendingDown } from "lucide-react";
 import heroImage from "@/assets/hero-solar.jpg";
 import backgroundPattern from "@/assets/background-pattern.jpg";
-
 const Home = () => {
-  const benefits = [
-    {
-      icon: Zap,
-      title: "Clean Energy",
-      description: "Harness the power of the sun for sustainable electricity",
-    },
-    {
-      icon: TrendingDown,
-      title: "Lower Bills",
-      description: "Reduce your monthly energy costs significantly",
-    },
-    {
-      icon: Shield,
-      title: "Reliable Power",
-      description: "Energy independence with backup solutions",
-    },
-  ];
-
-  return (
-    <div className="flex flex-col">
+  const benefits = [{
+    icon: Zap,
+    title: "Clean Energy",
+    description: "Harness the power of the sun for sustainable electricity"
+  }, {
+    icon: TrendingDown,
+    title: "Lower Bills",
+    description: "Reduce your monthly energy costs significantly"
+  }, {
+    icon: Shield,
+    title: "Reliable Power",
+    description: "Energy independence with backup solutions"
+  }];
+  return <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-b from-muted to-background">
-        <div 
-          className="absolute inset-0 opacity-30"
-          style={{
-            backgroundImage: `url(${backgroundPattern})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        />
+        <div className="absolute inset-0 opacity-30" style={{
+        backgroundImage: `url(${backgroundPattern})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }} />
         <div className="container px-4 py-20 md:py-32 relative z-10">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
                 Power Your Future with{" "}
-                <span className="text-primary">SSR</span>
+                <span className="text-primary">
+SSR 
+SOLAR ENERGY
+              </span>
               </h1>
               <p className="text-lg text-muted-foreground md:text-xl">
                 Join thousands of homeowners making the switch to sustainable,
@@ -58,11 +51,7 @@ const Home = () => {
               </div>
             </div>
             <div className="relative animate-fade-in">
-              <img
-                src={heroImage}
-                alt="Solar panels on residential roof"
-                className="rounded-2xl shadow-strong w-full"
-              />
+              <img src={heroImage} alt="Solar panels on residential roof" className="rounded-2xl shadow-strong w-full" />
             </div>
           </div>
         </div>
@@ -78,11 +67,7 @@ const Home = () => {
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-3">
-            {benefits.map((benefit, index) => (
-              <Card
-                key={index}
-                className="border-2 hover:shadow-soft transition-all duration-300 hover:-translate-y-1"
-              >
+            {benefits.map((benefit, index) => <Card key={index} className="border-2 hover:shadow-soft transition-all duration-300 hover:-translate-y-1">
                 <CardContent className="pt-8 pb-8 text-center">
                   <benefit.icon className="h-12 w-12 mx-auto mb-4 text-primary" />
                   <h3 className="text-xl font-semibold mb-2">
@@ -90,8 +75,7 @@ const Home = () => {
                   </h3>
                   <p className="text-muted-foreground">{benefit.description}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -136,18 +120,11 @@ const Home = () => {
             Get a free consultation and quote today. Our experts will help you
             design the perfect solar system for your needs.
           </p>
-          <Button
-            size="lg"
-            variant="secondary"
-            className="bg-white text-primary hover:bg-white/90"
-            asChild
-          >
+          <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90" asChild>
             <Link to="/contact">Contact Us Today</Link>
           </Button>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Home;
