@@ -41,7 +41,7 @@ const Home = () => {
             <div className="space-y-6 animate-fade-in">
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
                 Power Your Future with{" "}
-                <span className="text-primary">Clean Solar Energy</span>
+                <span className="text-primary">SSR</span>
               </h1>
               <p className="text-lg text-muted-foreground md:text-xl">
                 Join thousands of homeowners making the switch to sustainable,
