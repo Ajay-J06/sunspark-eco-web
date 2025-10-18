@@ -8,6 +8,9 @@ import {
   Battery,
   LineChart,
   Sun,
+  Zap,
+  Power,
+  Droplets,
 } from "lucide-react";
 import installationImage from "@/assets/installation.jpg";
 
@@ -48,6 +51,24 @@ const Services = () => {
       title: "System Upgrades",
       description:
         "Upgrade your existing solar system with the latest technology and improved efficiency.",
+    },
+    {
+      icon: Zap,
+      title: "On Grid Inverter / Hybrid Inverter",
+      description:
+        "Advanced inverter solutions for grid-tied and hybrid solar systems with seamless power management.",
+    },
+    {
+      icon: Power,
+      title: "Off Grid Inverter / On-line UPS",
+      description:
+        "Reliable off-grid inverter and UPS systems for uninterrupted power supply in remote locations.",
+    },
+    {
+      icon: Droplets,
+      title: "Agriculture Solar Pump System",
+      description:
+        "Sustainable solar-powered pumping solutions for agricultural irrigation and water management.",
     },
   ];
 
