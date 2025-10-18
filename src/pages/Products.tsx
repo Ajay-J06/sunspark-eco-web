@@ -8,6 +8,19 @@ import solarPanelImage from "@/assets/solar-panel.jpg";
 const Products = () => {
   const products = [
     {
+      name: "EPC Solar End to End",
+      efficiency: "Complete Solution",
+      warranty: "25 Years",
+      power: "Customized",
+      features: [
+        "Engineering, Procurement & Construction",
+        "Full project management",
+        "Turnkey solar installation",
+        "End-to-end implementation",
+      ],
+      badge: "Complete EPC Solution",
+    },
+    {
       name: "Premium Solar Panel Series",
       efficiency: "22.5%",
       warranty: "25 Years",
