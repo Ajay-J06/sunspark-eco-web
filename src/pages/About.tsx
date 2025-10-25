@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Users, Target, Lightbulb, Heart } from "lucide-react";
 import inverterBrands from "@/assets/inverter-brands.jpg";
+import solarPanelBrands from "@/assets/solar-panel-brands.jpg";
 
 const About = () => {
   const values = [
@@ -108,18 +109,37 @@ const About = () => {
       {/* Brands Section */}
       <section className="py-20 bg-muted">
         <div className="container px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="text-3xl font-bold">Premium Inverter Brands We Use</h2>
-            <p className="text-lg text-muted-foreground">
-              We partner with the world's leading inverter manufacturers to ensure
-              your solar system delivers optimal performance and reliability.
-            </p>
-            <div className="bg-background rounded-lg p-8 shadow-soft">
-              <img
-                src={inverterBrands}
-                alt="Premium inverter brands including Deye, Solis, Havells, Chopra, Solaryaan, Goodwe, Waaree, Growatt, Solar Edge, Luminous, Microtek, Eastman, and Adani"
-                className="w-full h-auto rounded-lg"
-              />
+          <div className="max-w-5xl mx-auto space-y-16">
+            {/* Solar Panels */}
+            <div className="text-center space-y-8">
+              <h2 className="text-3xl font-bold">Top Solar Panel Manufacturers We Use</h2>
+              <p className="text-lg text-muted-foreground">
+                We work with India's leading solar panel manufacturers to deliver
+                high-efficiency, reliable solar solutions for your energy needs.
+              </p>
+              <div className="bg-background rounded-lg p-8 shadow-soft">
+                <img
+                  src={solarPanelBrands}
+                  alt="Top solar panel manufacturers including Navitas Solar, Premier Energies, Tata Power Solar, Adani Solar, RenewSys, Goldi Solar, Jakson, Panasonic, Rayzon Solar, Vikram Solar, and Waaree"
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+            </div>
+
+            {/* Inverters */}
+            <div className="text-center space-y-8">
+              <h2 className="text-3xl font-bold">Premium Inverter Brands We Use</h2>
+              <p className="text-lg text-muted-foreground">
+                We partner with the world's leading inverter manufacturers to ensure
+                your solar system delivers optimal performance and reliability.
+              </p>
+              <div className="bg-background rounded-lg p-8 shadow-soft">
+                <img
+                  src={inverterBrands}
+                  alt="Premium inverter brands including Deye, Solis, Havells, Chopra, Solaryaan, Goodwe, Waaree, Growatt, Solar Edge, Luminous, Microtek, Eastman, and Adani"
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
             </div>
           </div>
         </div>
