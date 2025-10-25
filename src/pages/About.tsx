@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Users, Target, Lightbulb, Heart } from "lucide-react";
+import inverterBrands from "@/assets/inverter-brands.jpg";
 
 const About = () => {
   const values = [
@@ -100,6 +101,26 @@ const About = () => {
               solar energy, investing in the latest technology and training to
               ensure every installation exceeds expectations.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Brands Section */}
+      <section className="py-20 bg-muted">
+        <div className="container px-4">
+          <div className="max-w-4xl mx-auto text-center space-y-8">
+            <h2 className="text-3xl font-bold">Premium Inverter Brands We Use</h2>
+            <p className="text-lg text-muted-foreground">
+              We partner with the world's leading inverter manufacturers to ensure
+              your solar system delivers optimal performance and reliability.
+            </p>
+            <div className="bg-background rounded-lg p-8 shadow-soft">
+              <img
+                src={inverterBrands}
+                alt="Premium inverter brands including Deye, Solis, Havells, Chopra, Solaryaan, Goodwe, Waaree, Growatt, Solar Edge, Luminous, Microtek, Eastman, and Adani"
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
           </div>
         </div>
       </section>
