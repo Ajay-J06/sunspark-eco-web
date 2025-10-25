@@ -11,6 +11,8 @@ import {
   Zap,
   Power,
   Droplets,
+  Thermometer,
+  Settings,
 } from "lucide-react";
 import installationImage from "@/assets/installation.jpg";
 
@@ -69,6 +71,18 @@ const Services = () => {
       title: "Agriculture Solar Pump System",
       description:
         "Sustainable solar-powered pumping solutions for agricultural irrigation and water management.",
+    },
+    {
+      icon: Thermometer,
+      title: "Solar Water Heater",
+      description:
+        "Energy-efficient solar water heating systems for residential and commercial applications.",
+    },
+    {
+      icon: Settings,
+      title: "O&M Maintenance and AMC",
+      description:
+        "Comprehensive Operation & Maintenance services with Annual Maintenance Contracts for optimal system performance.",
     },
   ];
 
