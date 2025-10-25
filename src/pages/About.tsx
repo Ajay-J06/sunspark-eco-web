@@ -112,7 +112,7 @@ const About = () => {
           <div className="max-w-5xl mx-auto space-y-16">
             {/* Solar Panels */}
             <div className="text-center space-y-8">
-              <h2 className="text-3xl font-bold">Top Solar Panel Manufacturers We Use</h2>
+              <h2 className="text-3xl font-bold">Top 11 Solar Panel Manufacturers We Use</h2>
               <p className="text-lg text-muted-foreground">
                 We work with India's leading solar panel manufacturers to deliver
                 high-efficiency, reliable solar solutions for your energy needs.
