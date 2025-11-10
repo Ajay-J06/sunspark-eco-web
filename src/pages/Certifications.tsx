@@ -28,30 +28,6 @@ const Certifications = () => {
         "International Electrotechnical Commission standards for solar panel quality, safety, and performance.",
       year: "2014",
     },
-    {
-      icon: Award,
-      name: "UL Certified",
-      category: "Safety Standards",
-      description:
-        "Underwriters Laboratories certification ensuring all products meet rigorous safety requirements.",
-      year: "2015",
-    },
-    {
-      icon: Shield,
-      name: "TÜV Rheinland",
-      category: "Product Quality",
-      description:
-        "Global certification for solar products, validating quality, safety, and performance standards.",
-      year: "2016",
-    },
-    {
-      icon: Star,
-      name: "OSHA Certified",
-      category: "Workplace Safety",
-      description:
-        "Occupational Safety and Health Administration certification for safe installation practices.",
-      year: "2017",
-    },
   ];
 
   const achievements = [
