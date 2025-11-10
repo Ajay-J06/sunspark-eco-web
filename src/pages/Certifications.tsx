@@ -1,7 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Award, Shield, CheckCircle, Star, FileText } from "lucide-react";
+import { Award, Shield, CheckCircle, Star, FileText, Building2 } from "lucide-react";
 import solarInstallationCert from "@/assets/certificate-solar-installation.jpg";
+import udyamCert from "@/assets/certificate-udyam.png";
 
 const Certifications = () => {
   const certifications = [
@@ -14,6 +15,17 @@ const Certifications = () => {
       year: "2025",
       featured: true,
       image: solarInstallationCert,
+    },
+    {
+      icon: Building2,
+      name: "UDYAM Registration Certificate",
+      category: "MSME Government Registration",
+      description:
+        "Official MSME registration (UDYAM-TN-02-0343592) from the Ministry of Micro, Small and Medium Enterprises, Government of India. This certificate validates SSR Solar Energy as a registered Micro Enterprise, providing legal recognition and enabling access to government schemes and benefits.",
+      year: "2024",
+      featured: true,
+      image: udyamCert,
+      registrationNumber: "UDYAM-TN-02-0343592",
     },
     {
       icon: Shield,
@@ -70,14 +82,80 @@ const Certifications = () => {
         </div>
       </section>
 
-      {/* Featured Government Certification */}
+      {/* Featured Government Certifications */}
       <section className="py-20 bg-gradient-to-b from-primary/5 to-background">
         <div className="container px-4">
-          <div className="max-w-4xl mx-auto">
-            <Badge className="mb-6 mx-auto block w-fit">Government Certified</Badge>
-            <h2 className="text-3xl font-bold text-center mb-8">
-              Official Government Recognition
-            </h2>
+          <div className="max-w-6xl mx-auto space-y-12">
+            <div className="text-center">
+              <Badge className="mb-6">Government Certified</Badge>
+              <h2 className="text-3xl font-bold mb-4">
+                Official Government Recognition
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                SSR Solar Energy is officially recognized and certified by the Government of India, 
+                demonstrating our commitment to excellence and regulatory compliance.
+              </p>
+            </div>
+
+            {/* UDYAM Registration Certificate */}
+            <Card className="border-2 border-primary/20 shadow-lg">
+              <CardContent className="p-8">
+                <div className="grid md:grid-cols-2 gap-8 items-center">
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3">
+                      <Building2 className="h-10 w-10 text-primary" />
+                      <div>
+                        <h3 className="text-2xl font-bold">UDYAM Registration</h3>
+                        <Badge variant="secondary" className="mt-1">2024</Badge>
+                      </div>
+                    </div>
+                    <p className="text-lg font-semibold text-primary">
+                      MSME Government Registration
+                    </p>
+                    <div className="bg-muted/50 p-3 rounded-lg">
+                      <p className="text-sm font-mono text-muted-foreground">
+                        Registration No: <span className="font-bold text-foreground">UDYAM-TN-02-0343592</span>
+                      </p>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Official MSME registration from the Ministry of Micro, Small and Medium Enterprises, 
+                      Government of India. This certificate validates SSR Solar Energy as a registered Micro Enterprise, 
+                      providing legal recognition and credibility.
+                    </p>
+                    <div className="pt-4 border-t">
+                      <p className="text-sm font-semibold mb-2">Key Benefits:</p>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                          <span>Legal recognition as a registered enterprise</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                          <span>Access to government schemes and subsidies</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                          <span>Enhanced business credibility and trust</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                          <span>Priority in government tenders</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="relative">
+                    <img 
+                      src={udyamCert} 
+                      alt="UDYAM Registration Certificate - SSR Solar Energy" 
+                      className="w-full h-auto rounded-lg shadow-md border-2 border-primary/10"
+                    />
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* MSME-CFTI Certificate */}
             <Card className="border-2 border-primary/20 shadow-lg">
               <CardContent className="p-8">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -93,9 +171,9 @@ const Certifications = () => {
                       Solar Power Installation Specialist
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      Officially certified by the Government of India's MSME Technology Development Centre, Chennai (CFTI). 
+                      Officially certified by the Government of India&apos;s MSME Technology Development Centre, Chennai (CFTI). 
                       This certification is issued by the Ministry of Micro, Small and Medium Enterprises, validating our 
-                      team's expertise and commitment to excellence in solar power installation.
+                      team&apos;s expertise and commitment to excellence in solar power installation.
                     </p>
                     <div className="pt-4 border-t">
                       <p className="text-sm font-semibold mb-2">Why This Matters:</p>
