@@ -1,16 +1,19 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Award, Shield, CheckCircle, Star } from "lucide-react";
+import { Award, Shield, CheckCircle, Star, FileText } from "lucide-react";
+import solarInstallationCert from "@/assets/certificate-solar-installation.jpg";
 
 const Certifications = () => {
   const certifications = [
     {
       icon: Award,
-      name: "NABCEP Certified",
-      category: "Installation Excellence",
+      name: "MSME-CFTI Solar Power Installation",
+      category: "Government Certified Training",
       description:
-        "North American Board of Certified Energy Practitioners certification, the gold standard for solar installation professionals.",
-      year: "2015",
+        "Official certification from Government of India's MSME Technology Development Centre, Chennai. This prestigious certification validates our expertise in solar power installation as recognized by the Ministry of Micro, Small and Medium Enterprises.",
+      year: "2025",
+      featured: true,
+      image: solarInstallationCert,
     },
     {
       icon: Shield,
@@ -67,11 +70,73 @@ const Certifications = () => {
         </div>
       </section>
 
-      {/* Certifications Grid */}
+      {/* Featured Government Certification */}
+      <section className="py-20 bg-gradient-to-b from-primary/5 to-background">
+        <div className="container px-4">
+          <div className="max-w-4xl mx-auto">
+            <Badge className="mb-6 mx-auto block w-fit">Government Certified</Badge>
+            <h2 className="text-3xl font-bold text-center mb-8">
+              Official Government Recognition
+            </h2>
+            <Card className="border-2 border-primary/20 shadow-lg">
+              <CardContent className="p-8">
+                <div className="grid md:grid-cols-2 gap-8 items-center">
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3">
+                      <Award className="h-10 w-10 text-primary" />
+                      <div>
+                        <h3 className="text-2xl font-bold">MSME-CFTI Certified</h3>
+                        <Badge variant="secondary" className="mt-1">2025</Badge>
+                      </div>
+                    </div>
+                    <p className="text-lg font-semibold text-primary">
+                      Solar Power Installation Specialist
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Officially certified by the Government of India's MSME Technology Development Centre, Chennai (CFTI). 
+                      This certification is issued by the Ministry of Micro, Small and Medium Enterprises, validating our 
+                      team's expertise and commitment to excellence in solar power installation.
+                    </p>
+                    <div className="pt-4 border-t">
+                      <p className="text-sm font-semibold mb-2">Why This Matters:</p>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                          <span>Government-backed training and certification</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                          <span>Compliance with national installation standards</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                          <span>Recognized by industry authorities</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="relative">
+                    <img 
+                      src={solarInstallationCert} 
+                      alt="MSME-CFTI Solar Power Installation Certificate" 
+                      className="w-full h-auto rounded-lg shadow-md border-2 border-primary/10"
+                    />
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Other Certifications Grid */}
       <section className="py-20">
         <div className="container px-4">
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {certifications.map((cert, index) => (
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Additional Certifications
+          </h2>
+          <div className="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
+            {certifications.filter(cert => !cert.featured).map((cert, index) => (
               <Card
                 key={index}
                 className="hover:shadow-soft transition-all duration-300 hover:-translate-y-1"
