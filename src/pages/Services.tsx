@@ -13,6 +13,7 @@ import {
   Droplets,
   Thermometer,
   Settings,
+  Cable,
 } from "lucide-react";
 import installationImage from "@/assets/installation.jpg";
 
@@ -83,6 +84,12 @@ const Services = () => {
       title: "O&M Maintenance and AMC",
       description:
         "Comprehensive Operation & Maintenance services with Annual Maintenance Contracts for optimal system performance.",
+    },
+    {
+      icon: Cable,
+      title: "Electrical House Wiring",
+      description:
+        "Professional electrical wiring services for residential and commercial properties with safety-compliant installations.",
     },
   ];
 
