@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle, Zap, Shield, TrendingDown } from "lucide-react";
+import { CheckCircle, Zap, Shield, TrendingDown, BadgeIndianRupee, Home as HomeIcon, Sprout } from "lucide-react";
 import heroImage from "@/assets/hero-solar.jpg";
 import backgroundPattern from "@/assets/background-pattern.jpg";
 const Home = () => {
@@ -107,6 +107,127 @@ SOLAR ENERGY
             </div>
             <Button size="lg" className="mt-8" asChild>
               <Link to="/certifications">View Our Certifications</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Solar Subsidy Section */}
+      <section className="py-20 bg-background">
+        <div className="container px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">
+              Government Solar Subsidies (2025)
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Take advantage of government incentives and reduce your solar installation costs
+            </p>
+          </div>
+          <div className="grid gap-8 md:grid-cols-3">
+            {/* PM Surya Ghar Subsidy */}
+            <Card className="border-2 hover:shadow-soft transition-all duration-300">
+              <CardContent className="pt-8 pb-8">
+                <BadgeIndianRupee className="h-12 w-12 mb-4 text-primary" />
+                <h3 className="text-xl font-semibold mb-3">
+                  PM Surya Ghar: Muft Bijli Yojana
+                </h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Residential Rooftop Solar
+                </p>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span>₹30,000 per kW (first 2 kW)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span>₹18,000 per kW (3rd kW)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Total subsidy up to ₹78,000</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Direct bank transfer</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span>MNRE-approved systems only</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* MNRE Rooftop Solar Subsidy */}
+            <Card className="border-2 hover:shadow-soft transition-all duration-300">
+              <CardContent className="pt-8 pb-8">
+                <HomeIcon className="h-12 w-12 mb-4 text-primary" />
+                <h3 className="text-xl font-semibold mb-3">
+                  MNRE Rooftop Solar Subsidy
+                </h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  General Residential Scheme
+                </p>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span>40% subsidy for up to 3 kW</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span>20% subsidy for 3-10 kW</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span>For residential homes only</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Applies to housing societies</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* PM KUSUM Yojana */}
+            <Card className="border-2 hover:shadow-soft transition-all duration-300">
+              <CardContent className="pt-8 pb-8">
+                <Sprout className="h-12 w-12 mb-4 text-primary" />
+                <h3 className="text-xl font-semibold mb-3">
+                  PM KUSUM Yojana
+                </h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  For Farmers & Agriculture
+                </p>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Up to 60% subsidy</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span>30% loan facility available</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span>10% farmer contribution</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Solar water pumps (3HP-10HP)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Ground-mounted solar plants</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+          <div className="text-center mt-8">
+            <Button size="lg" asChild>
+              <Link to="/contact">Check Your Eligibility</Link>
             </Button>
           </div>
         </div>
