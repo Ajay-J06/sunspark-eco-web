@@ -225,11 +225,6 @@ SOLAR ENERGY
               </CardContent>
             </Card>
           </div>
-          <div className="text-center mt-8">
-            <Button size="lg" asChild>
-              <Link to="/contact">Check Your Eligibility</Link>
-            </Button>
-          </div>
         </div>
       </section>
 
