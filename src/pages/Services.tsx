@@ -87,7 +87,7 @@ const Services = () => {
     },
     {
       icon: Cable,
-      title: "house industrial",
+      title: "House Industrial Wiring",
       description:
         "Professional electrical wiring services for residential and commercial properties with safety-compliant installations.",
     },
