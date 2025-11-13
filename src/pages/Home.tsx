@@ -117,111 +117,29 @@ SOLAR ENERGY
         <div className="container px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">
-              Government Solar Subsidies (2025)
+              SUBSIDYS
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Take advantage of government incentives and reduce your solar installation costs
+              (Amount will be credited to your A/c)
             </p>
           </div>
-          <div className="grid gap-8 md:grid-cols-3">
-            {/* PM Surya Ghar Subsidy */}
-            <Card className="border-2 hover:shadow-soft transition-all duration-300">
+          <div className="max-w-2xl mx-auto">
+            <Card className="border-2">
               <CardContent className="pt-8 pb-8">
-                <BadgeIndianRupee className="h-12 w-12 mb-4 text-primary" />
-                <h3 className="text-xl font-semibold mb-3">
-                  PM Surya Ghar: Muft Bijli Yojana
-                </h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Residential Rooftop Solar
-                </p>
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>₹30,000 per kW (first 2 kW)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>₹18,000 per kW (3rd kW)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Total subsidy up to ₹78,000</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Direct bank transfer</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>MNRE-approved systems only</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            {/* MNRE Rooftop Solar Subsidy */}
-            <Card className="border-2 hover:shadow-soft transition-all duration-300">
-              <CardContent className="pt-8 pb-8">
-                <HomeIcon className="h-12 w-12 mb-4 text-primary" />
-                <h3 className="text-xl font-semibold mb-3">
-                  MNRE Rooftop Solar Subsidy
-                </h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  General Residential Scheme
-                </p>
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>40% subsidy for up to 3 kW</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>20% subsidy for 3-10 kW</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>For residential homes only</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Applies to housing societies</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            {/* PM KUSUM Yojana */}
-            <Card className="border-2 hover:shadow-soft transition-all duration-300">
-              <CardContent className="pt-8 pb-8">
-                <Sprout className="h-12 w-12 mb-4 text-primary" />
-                <h3 className="text-xl font-semibold mb-3">
-                  PM KUSUM Yojana
-                </h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  For Farmers & Agriculture
-                </p>
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Up to 60% subsidy</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>30% loan facility available</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>10% farmer contribution</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Solar water pumps (3HP-10HP)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Ground-mounted solar plants</span>
-                  </li>
-                </ul>
+                <div className="space-y-6">
+                  <div className="flex justify-between items-center text-lg">
+                    <span className="font-medium">1 kW</span>
+                    <span className="text-primary font-semibold">₹30,000</span>
+                  </div>
+                  <div className="flex justify-between items-center text-lg">
+                    <span className="font-medium">2 kW</span>
+                    <span className="text-primary font-semibold">₹60,000</span>
+                  </div>
+                  <div className="flex justify-between items-center text-lg">
+                    <span className="font-medium">3 kW</span>
+                    <span className="text-primary font-semibold">₹78,000</span>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>
