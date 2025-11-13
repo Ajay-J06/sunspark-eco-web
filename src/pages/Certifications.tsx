@@ -1,8 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award, Shield, CheckCircle, Star, FileText, Building2 } from "lucide-react";
-import solarInstallationCert from "@/assets/certificate-solar-installation.jpg";
-import udyamCert from "@/assets/certificate-udyam.png";
+import solarInstallationCert from "@/assets/certificate-msme.jpg";
+import udyamCert from "@/assets/certificate-udyam.jpg";
 
 const Certifications = () => {
   const certifications = [
