@@ -207,37 +207,6 @@ const Certifications = () => {
         </div>
       </section>
 
-      {/* Other Certifications Grid */}
-      <section className="py-20">
-        <div className="container px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            Additional Certifications
-          </h2>
-          <div className="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
-            {certifications.filter(cert => !cert.featured).map((cert, index) => (
-              <Card
-                key={index}
-                className="hover:shadow-soft transition-all duration-300 hover:-translate-y-1"
-              >
-                <CardHeader>
-                  <div className="flex items-start justify-between mb-4">
-                    <cert.icon className="h-12 w-12 text-primary" />
-                    <Badge variant="secondary">{cert.year}</Badge>
-                  </div>
-                  <CardTitle className="text-xl">{cert.name}</CardTitle>
-                  <p className="text-sm text-primary font-medium">
-                    {cert.category}
-                  </p>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">{cert.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Achievements Section */}
       <section className="py-20 bg-muted">
         <div className="container px-4">
