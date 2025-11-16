@@ -205,7 +205,7 @@ const About = () => {
               certified professionals. Every team member is committed to
               delivering exceptional results and outstanding customer service.
             </p>
-            <div className="grid gap-6 md:grid-cols-3 pt-8">
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 pt-8">
               <Card>
                 <CardContent className="pt-6 text-center">
                   <div className="h-20 w-20 rounded-full bg-primary/10 mx-auto mb-4 flex items-center justify-center">
@@ -222,7 +222,7 @@ const About = () => {
                   <div className="h-20 w-20 rounded-full bg-primary/10 mx-auto mb-4 flex items-center justify-center">
                     <Target className="h-10 w-10 text-primary" />
                   </div>
-                  <h3 className="font-semibold mb-1">100+</h3>
+                  <h3 className="font-semibold mb-1">10</h3>
                   <p className="text-sm text-muted-foreground">
                     Years Combined Experience
                   </p>
@@ -236,6 +236,28 @@ const About = () => {
                   <h3 className="font-semibold mb-1">24/7</h3>
                   <p className="text-sm text-muted-foreground">
                     Customer Support
+                  </p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="pt-6 text-center">
+                  <div className="h-20 w-20 rounded-full bg-primary/10 mx-auto mb-4 flex items-center justify-center">
+                    <Target className="h-10 w-10 text-primary" />
+                  </div>
+                  <h3 className="font-semibold mb-1">9</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Total Installation Projects
+                  </p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="pt-6 text-center">
+                  <div className="h-20 w-20 rounded-full bg-primary/10 mx-auto mb-4 flex items-center justify-center">
+                    <Lightbulb className="h-10 w-10 text-primary" />
+                  </div>
+                  <h3 className="font-semibold mb-1">132kWp</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Total Capacity System
                   </p>
                 </CardContent>
               </Card>
