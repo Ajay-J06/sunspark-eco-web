@@ -69,7 +69,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Address",
-      content: "123 Solar Street, Green City, ST 12345",
+      content: "No.11/29 Nehru Nagar NSK 1st Street check post Velachery Chennai-600042",
     },
     {
       icon: Clock,
