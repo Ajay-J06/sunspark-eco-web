@@ -63,8 +63,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      content: "info@ssrsolar.com",
-      link: "mailto:info@ssrsolar.com",
+      content: "ssrsolar9122@gmail.com",
+      link: "mailto:ssrsolar9122@gmail.com",
     },
     {
       icon: MapPin,
