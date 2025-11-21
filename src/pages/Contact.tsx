@@ -6,7 +6,6 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -24,11 +23,29 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const { error } = await supabase.functions.invoke('send-contact-email', {
-        body: formData
+      const webhookUrl = import.meta.env.VITE_MAKE_WEBHOOK_URL;
+      
+      if (!webhookUrl) {
+        throw new Error("Make.com webhook URL not configured");
+      }
+
+      const response = await fetch(webhookUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          timestamp: new Date().toISOString(),
+        }),
       });
 
-      if (error) throw error;
+      if (!response.ok) {
+        throw new Error("Failed to send to Make.com");
+      }
 
       toast({
         title: "Message sent!",
