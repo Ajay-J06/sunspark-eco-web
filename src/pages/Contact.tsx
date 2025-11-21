@@ -13,7 +13,7 @@ const Contact = () => {
     name: "",
     email: "",
     phone: "",
-    message: "",
+    message: "I need your solar , can we have an deal .",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
