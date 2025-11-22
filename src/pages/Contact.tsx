@@ -86,7 +86,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Address",
-      content: "No.11/29 Nehru Nagar NSK 1st Street check post Velachery Chennai-600042",
+      content: "no.11/29, ssr solar energy, velachery",
     },
     {
       icon: Clock,
