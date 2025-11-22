@@ -236,6 +236,12 @@ const Contact = () => {
             <h2 className="text-2xl font-bold text-center mb-8">
               Visit Our Office
             </h2>
+            <div className="text-center mb-6">
+              <p className="text-lg text-muted-foreground flex items-center justify-center gap-2">
+                <MapPin className="h-5 w-5" />
+                no.11/29, ssr solar energy, velachery
+              </p>
+            </div>
             <div className="bg-background rounded-2xl p-4 shadow-soft">
               <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
                 <MapPin className="h-16 w-16 text-muted-foreground" />
