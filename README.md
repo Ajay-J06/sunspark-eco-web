@@ -1,4 +1,4 @@
-**ssr solar**
+**SSR SOLAR ENERGY**
 
 **Use your preferred IDE**
 
