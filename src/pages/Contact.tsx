@@ -243,9 +243,18 @@ const Contact = () => {
               </p>
             </div>
             <div className="bg-background rounded-2xl p-4 shadow-soft">
-              <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                <MapPin className="h-16 w-16 text-muted-foreground" />
-              </div>
+            <div className="aspect-video bg-muted rounded-lg overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.5773873547366!2d80.22076931482222!3d12.98068299085897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d9c1c7d7b29%3A0x6e3c8f3e3f3e3f3e!2sVelachery%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="SSR Solar Energy Location"
+              />
+            </div>
             </div>
           </div>
         </div>
